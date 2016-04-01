@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="hnListItem" id="c22-O7-iKe" customClass="hnListItem" customModule="TenThings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="2mG-Ne-tPm">
+                    <rect key="frame" x="10" y="5" width="410" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Multiline Label" id="ysW-d5-2db">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView id="oXN-n1-h5s">
+                    <rect key="frame" x="320" y="0.0" width="100" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button id="gnC-Nf-Jyu">
+                            <rect key="frame" x="20" y="18" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="chain-links" imagePosition="overlaps" alignment="center" alternateImage="chain-links" imageScaling="proportionallyUpOrDown" inset="2" id="iec-dV-TXW">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="articleLinkClicked:" target="c22-O7-iKe" id="9Wr-Pd-KRv"/>
+                            </connections>
+                        </button>
+                        <button id="dka-IU-OHS">
+                            <rect key="frame" x="56" y="18" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="message-bubble" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7m5-gX-JhK">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="commentLinkClicked:" target="c22-O7-iKe" id="Lvm-db-nK1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </customView>
+            </subviews>
+            <connections>
+                <outlet property="articleLink" destination="gnC-Nf-Jyu" id="wT4-Zu-Xhb"/>
+                <outlet property="commentLink" destination="dka-IU-OHS" id="CKx-aU-XqX"/>
+                <outlet property="descriptionLabel" destination="2mG-Ne-tPm" id="8TG-bj-mH9"/>
+                <outlet property="hoverBgView" destination="oXN-n1-h5s" id="6uF-2n-6UP"/>
+            </connections>
+            <point key="canvasLocation" x="177" y="247"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="chain-links" width="25.511419296264648" height="25.511419296264648"/>
+        <image name="message-bubble" width="418.90908813476562" height="418.90908813476562"/>
+    </resources>
+</document>

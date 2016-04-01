@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="TenThings" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="efw-YP-e0H" id="XcA-Xr-F0R"/>
+                <outlet property="ghButton" destination="Hfs-cV-aqu" id="crF-6Q-9Z5"/>
+                <outlet property="goButton" destination="qrh-1y-j8U" id="h3d-kY-qUW"/>
+                <outlet property="jsButton" destination="kHn-S1-lxu" id="A0Q-NL-Dg8"/>
+                <outlet property="phButton" destination="idh-8J-NvG" id="6Ce-5E-2Qf"/>
+                <outlet property="pythonButton" destination="Z6Q-KP-zhF" id="d0Q-f1-IKL"/>
+                <outlet property="rubyButton" destination="bGk-rR-eRI" id="h4x-He-heF"/>
+                <outlet property="settingsButton" destination="5tF-du-BOO" id="UxG-Ms-p3W"/>
+                <outlet property="swiftButton" destination="XRG-WQ-yNu" id="BQV-tW-JNf"/>
+                <outlet property="timerLabel" destination="BYc-hN-ZmZ" id="Bzg-ZD-UAl"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="ycButton" destination="X78-tf-vZy" id="Ohh-P2-hGp"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="680"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button focusRingType="none" allowsExpansionToolTips="YES" id="5tF-du-BOO">
+                    <rect key="frame" x="444" y="644" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="settings" imagePosition="overlaps" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="8NR-eP-uQA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="settingsClicked:" target="-2" id="hOt-W3-i92"/>
+                    </connections>
+                </button>
+                <button id="idh-8J-NvG">
+                    <rect key="frame" x="10" y="526" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="productHunt" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rVU-8j-ITO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="phClicked:" target="-2" id="vSy-Pg-oMa"/>
+                    </connections>
+                </button>
+                <button id="Hfs-cV-aqu">
+                    <rect key="frame" x="10" y="482" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="github" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Rge-IT-JGE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="ghClicked:" target="-2" id="pWI-zs-75y"/>
+                    </connections>
+                </button>
+                <button id="X78-tf-vZy">
+                    <rect key="frame" x="10" y="570" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ycombinator" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cy3-Vn-auJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="ycClicked:" target="-2" id="XYQ-Tz-R8p"/>
+                    </connections>
+                </button>
+                <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="efw-YP-e0H">
+                    <rect key="frame" x="58" y="10" width="430" height="600"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="XWG-Ll-b72">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view id="u5A-Rw-ZMi">
+                                <rect key="frame" x="0.0" y="506" width="259" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </view>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="rw2-ie-S7x">
+                        <rect key="frame" x="-100" y="-100" width="403" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="oNg-Y4-eWC">
+                        <rect key="frame" x="388" y="1" width="16" height="325"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="h2D-Sn-9kQ">
+                    <rect key="frame" x="152" y="636" width="197" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="10 Things, 10 Minutes" id="aSm-1y-uLy">
+                        <font key="font" metaFont="systemThin" size="20"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="kHn-S1-lxu">
+                    <rect key="frame" x="15" y="451" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="javascript" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YIv-pD-Vff">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="jsClicked:" target="-2" id="XHI-yc-r52"/>
+                    </connections>
+                </button>
+                <button id="qrh-1y-j8U">
+                    <rect key="frame" x="15" y="421" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="golang" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zha-2s-dYN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="goClicked:" target="-2" id="fM8-cm-oQn"/>
+                    </connections>
+                </button>
+                <button id="XRG-WQ-yNu">
+                    <rect key="frame" x="15" y="391" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="swift" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="isN-vF-TPI">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="swiftClicked:" target="-2" id="Zm0-6T-UMI"/>
+                    </connections>
+                </button>
+                <button id="bGk-rR-eRI">
+                    <rect key="frame" x="15" y="361" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ruby" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="n2k-MM-vWw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="rubyClicked:" target="-2" id="MTs-mX-2Sy"/>
+                    </connections>
+                </button>
+                <button id="Z6Q-KP-zhF">
+                    <rect key="frame" x="15" y="331" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="python" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hJE-dL-5Wm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pythonClicked:" target="-2" id="FUb-Nw-itE"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="3A1-cZ-oc0">
+                    <rect key="frame" x="147" y="629" width="206" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Your Favorite News Sources" id="DsY-jn-LFb">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="BYc-hN-ZmZ">
+                    <rect key="frame" x="13" y="646" width="66" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="10:00" id="4zy-he-7Xh">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="413" y="494"/>
+        </customView>
+        <menu id="Bc2-QV-4f1">
+            <items>
+                <menuItem title="About" id="vJx-lc-KBH">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Preference" keyEquivalent="p" id="b7e-8D-78G">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Quit" keyEquivalent="q" id="EEm-7u-HTC">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="702" y="786.5"/>
+        </menu>
+    </objects>
+    <resources>
+        <image name="github" width="280" height="280"/>
+        <image name="golang" width="96" height="96"/>
+        <image name="javascript" width="96" height="96"/>
+        <image name="productHunt" width="300" height="300"/>
+        <image name="python" width="96" height="96"/>
+        <image name="ruby" width="96" height="96"/>
+        <image name="settings" width="128" height="128"/>
+        <image name="swift" width="600" height="600"/>
+        <image name="ycombinator" width="257" height="257"/>
+    </resources>
+</document>
